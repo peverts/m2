@@ -30,15 +30,16 @@
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.3"
+    "gulp-sourcemaps": "^1.6.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "latest",
+    "gulp-uglify": "^3.0.2",
     "hamburgers": "latest",
     "hiraku": "latest",
+    "micromodal": "^0.4.6",
     "scrollreveal": "latest",
-    "swiper": "latest",
+    "swiper": "^7.0.7",
     "uikit": "latest"
   },
   "browserslist": [

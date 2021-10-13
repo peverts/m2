@@ -1,5 +1,6 @@
 .connector{
   position: relative;
+  overflow: hidden;
 }
 .is-style-subheadline{
   letter-spacing: 0.3em;
@@ -14,7 +15,17 @@
 }
 .ghostkit-button{
   border: none !important;
-  box-shadow: inset 0px 0px 0px var(--gkt-button__border-width) var(--gkt-button__border-color);
+  &.is-style-inset-border{
+    box-shadow: inset 0px 0px 0px var(--gkt-button__border-width) var(--gkt-button__border-color);
+  }
+}
+.header-phone{
+  margin-left: 2vw;
+  padding-left: 2vw;
+  border-left: 2px solid #EBEBEB;
+  svg{
+    margin-right: 8px;
+  }
 }
 #header{
   nav{

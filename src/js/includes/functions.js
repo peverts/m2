@@ -48,10 +48,24 @@ jQuery(document).ready(function () {
         }, 1);
     }
 
+    //MODAL
+    MicroModal.init({
+        openTrigger: 'data-custom-open',
+    });
+
+    jQuery('[data-custom-open="dyn-modal"]').click(function() {
+        var title = jQuery(this).data('title');
+        var subtitle = jQuery(this).data('subtitle');
+        var content = decodeURIComponent(jQuery(this).data('content').replace(/\+/g, ' '));
+
+        jQuery('#dyn-modal-title').empty().append(title);
+        jQuery('#dyn-modal-subtitle').empty().append(subtitle);
+        jQuery('#dyn-modal-content').empty().append(content);
+    });
+
     // -----------------------------------------------
     // -----------------------------------------------
     // ANCHOR LINKS
-
     jQuery('main a[href*="#"]:not([class*=accordion]):not(._brlbs-btn), header a[href*="#"]:not([class*=accordion]), .offcanvas a[href*="#"]:not([class*=accordion]), .w-scrollto').stop().click(function(e) {
         var target = jQuery(this).attr("href");
         var current_url = window.location.origin + window.location.pathname;
@@ -74,13 +88,10 @@ jQuery(document).ready(function () {
             }
         }
     });
-
     // -----------------------------------------------
     // -----------------------------------------------
 
 });
-
-
 
 function scrollTo(target)
 {

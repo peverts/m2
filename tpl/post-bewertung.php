@@ -46,6 +46,13 @@ if($stars) {
 	            </p>
 			</header>
 
+            <p class="post-title">
+                <?= get_the_title() ?>
+                <?php if($data['subheadline']) { ?>
+                    &nbsp;<?= $data['subheadline'] ?>
+                <?php } ?>
+            </p>
+
 			<?php if(! $hide_descr) { ?>
 
 				<?php
@@ -56,12 +63,7 @@ if($stars) {
 				}
 				?>
 			<?php } ?>
-            <p class="post-title">
-                <strong><?= get_the_title() ?></strong>
-                <?php if($data['subheadline']) { ?>
-                    &nbsp;<?= $data['subheadline'] ?>
-                <?php } ?>
-            </p>
+            <p><a data-custom-open="dyn-modal" data-content="<?= urlencode($data['text']) ?>" data-title="<?= get_the_title() ?>" data-subtitle="<?= $data['subheadline'] ?>">weiterlesen</a></p>
 		</div>
 
 	</div>

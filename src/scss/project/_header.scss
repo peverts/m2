@@ -80,25 +80,26 @@
                 margin: 0 auto;
 
                 @media(min-width: $breakpoint-small) {
-                    width: 180px;
+                    width: 200px;
                 }
 
                 @media(min-width: $breakpoint-large) {
-                    width: 230px;
+                    width: 290px;
                 }
             }
 
+            /*
             path, polygon {
                 fill: w-color(dark);
                 transition: all .2s ease-in-out;
             }
-
             &:hover {
 
                 path, polygon {
                     fill: w-color(primary);
                 }
             }
+            */
         }
 
 

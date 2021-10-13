@@ -3,13 +3,12 @@
 // Block: Button
 // ----------------------------------------------------
 
-/*
-wp.blocks.registerBlockStyle( 'core/button', {
-	name: 'w-btn',
-	label: 'Test'
+wp.blocks.registerBlockStyle( 'ghostkit/button-single', {
+	name: 'inset-border',
+	label: 'Innere Border'
 } );
 
-
+/*
 wp.blocks.unregisterBlockStyle( 'core/button', 'default' );
 wp.blocks.unregisterBlockStyle( 'core/button', 'outline' );
 wp.blocks.unregisterBlockStyle( 'core/button', 'squared' );

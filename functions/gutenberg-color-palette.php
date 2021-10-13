@@ -15,12 +15,12 @@ add_theme_support( 'editor-color-palette', array(
 	array(
 		'name'  => __( 'Primary', 'ea_genesis_child' ),
 		'slug'  => 'primary',
-		'color'	=> '#AAC453',
+		'color'	=> '#7CBF7E',
 	),
 	array(
 		'name'  => __( 'Dark', 'ea_genesis_child' ),
 		'slug'  => 'dark',
-		'color' => '#24313E',
+		'color' => '#284255',
 	),
 	array(
 		'name'	=> __( 'Medium', 'ea_genesis_child' ),
