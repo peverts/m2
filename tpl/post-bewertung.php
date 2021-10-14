@@ -48,6 +48,7 @@ if($stars) {
 
             <p class="post-title">
                 <?= get_the_title() ?>
+                <br />
                 <?php if($data['subheadline']) { ?>
                     &nbsp;<?= $data['subheadline'] ?>
                 <?php } ?>
