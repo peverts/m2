@@ -103,3 +103,13 @@
     }
   }
 }
+
+.ghostkit-carousel-arrow, .slider-arrow{
+  border-radius: 5px !important;
+  background: $w-color-primary !important;
+  svg{
+    path{
+      fill: #fff !important;
+    }
+  }
+}
