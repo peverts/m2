@@ -80,13 +80,14 @@
 
                 @media(min-width: $breakpoint-small) {
                     width: 200px;
+                }
+                @media(min-width: $breakpoint-large) {
+                    width: 290px;
+                }
+                @media(max-width: $w-breakpoint-small){
                     .c{
                         display: none;
                     }
-                }
-
-                @media(min-width: $breakpoint-large) {
-                    width: 290px;
                 }
             }
 
