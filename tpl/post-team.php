@@ -19,12 +19,16 @@ $hide_links = true;
 <article <?php post_class('post post--box'); ?> id="post-<?php the_ID(); ?>">
 	<div class="post-inner">
 
-		<?php if(! $hide_images) { ?>
-			<?php include 'post/thumbnail.php'; ?>
-		<?php } ?>
+        <?php if( has_post_thumbnail() ) { ?>
+            <div class="post-image">
+                <?php the_post_thumbnail($thumbnail_size, ['class' => $image_classes]); ?>
+            </div>
+        <?php } ?>
 
 		<div class="post-content">
 			<?php include 'post/header.php'; ?>
+            <?= the_excerpt(); ?>
+            <p><a class="ghostkit-button ghostkit-button-md is-style-inset-border custom-btn" data-custom-open="dyn-modal" data-content="<?= urlencode(get_the_content()) ?>" data-title="<?= get_the_title() ?>"">weiterlesen</a></p>
 
 			<?php if(! $hide_descr) { ?>
 				<?php

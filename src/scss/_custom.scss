@@ -113,3 +113,24 @@
     }
   }
 }
+
+//Type-Team
+.type-team{
+  .post-inner{
+    box-shadow: none;
+    text-align: center;
+    :hover{
+      img{
+        transform: none !important;
+      }
+    }
+    .custom-btn{
+      background: #fff;
+      color: $w-color-primary;
+      &:hover{
+        background-color: $w-color-primary;
+        color: #fff;
+      }
+    }
+  }
+}

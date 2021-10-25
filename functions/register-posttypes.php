@@ -41,7 +41,7 @@ function baw_register_my_cpts() {
 		"query_var" => true,
 		"menu_position" => 20,
 		"menu_icon" => "dashicons-groups",
-		"supports" => [ "title", "thumbnail", "revisions" ],
+		"supports" => [ "title", "thumbnail", "revisions", "editor", "excerpt" ],
 		"show_in_graphql" => false,
 	];
 

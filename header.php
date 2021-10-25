@@ -73,9 +73,9 @@ $page_header	= $override_header ?: $global_header;
 				</div>
 				<div class="header-col">
 					<?php include 'tpl/partials/header-nav.php'; ?>
-                    <a class="header-phone" href="tel:01234567">
+                    <a class="header-phone" href="tel:<?= $global_contact['telefonnummer'] ?>">
                         <?= baw_svg('solid/phone-alt'); ?>
-                        <strong>0123456789</strong>
+                        <strong><?= $global_contact['telefonnummer'] ?></strong>
                     </a>
 					<?php include 'tpl/partials/calltoaction.php'; ?>
 					<?php include 'tpl/partials/header-contact.php'; ?>
