@@ -30,6 +30,9 @@
   svg{
     margin-right: 8px;
   }
+  @media(max-width: $w-breakpoint-medium){
+    border-left: none;
+  }
 }
 #header{
   nav{
