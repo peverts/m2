@@ -18,6 +18,10 @@
   &.is-style-inset-border{
     box-shadow: inset 0px 0px 0px var(--gkt-button__border-width) var(--gkt-button__border-color);
   }
+  @media(max-width: $w-breakpoint-medium){
+    display: inline-block;
+    width: inherit;
+  }
 }
 .header-phone{
   margin-left: 2vw;
