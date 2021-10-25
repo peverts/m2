@@ -181,6 +181,9 @@ function baw_init()
     add_image_size('baw-xl', 1500, 1500, false);
     add_image_size('baw-xl-fix', 1500, 950, array( 'center', 'center' ));
 
+    //Mitarbeiter
+    add_image_size('thumb-team', 472, 631, true);
+
 
     //
     // Menü-Setup

@@ -121,9 +121,9 @@
 //Type-Team
 .type-team{
   .post-inner{
-    box-shadow: none;
+    box-shadow: none !important;
     text-align: center;
-    :hover{
+    &:hover{
       img{
         transform: none !important;
       }
