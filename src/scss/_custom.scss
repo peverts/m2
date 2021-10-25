@@ -75,6 +75,36 @@
     top: 0;
     left: calc(50% - 1.5px)
   }
+  @media(max-width: $w-breakpoint-large){
+    .ghostkit-icon-box{
+      .ghostkit-icon-box-icon{
+        width: 25%;
+      }
+      &::after{
+        display: none;
+      }
+    }
+    &::after{
+      display: none;
+    }
+  }
+  @media(max-width: $w-breakpoint-small){
+    .ghostkit-icon-box{
+      margin-bottom: 35px;
+      .ghostkit-icon-box-content{
+        text-align: center;
+        padding: 0;
+        margin-top: 10px;
+      }
+      .ghostkit-icon-box-icon{
+        width: 100%;
+        svg{
+          width: 100px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 }
 .frm_forms{
   fieldset{
