@@ -21,7 +21,7 @@ $hide_links = true;
 
         <?php if( has_post_thumbnail() ) { ?>
             <div class="post-image">
-                <?php the_post_thumbnail($thumbnail_size, 'thumb-team'); ?>
+                <?php the_post_thumbnail('thumb-team'); ?>
             </div>
         <?php } ?>
 
